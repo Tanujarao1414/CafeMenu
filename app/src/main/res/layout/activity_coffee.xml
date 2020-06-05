@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/coffee"
+    tools:context=".Coffee">
+
+    <Button
+        android:id="@+id/hotcoffee"
+        android:layout_width="193dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginBottom="46dp"
+        android:text="Hot Coffee"
+        app:layout_constraintBottom_toTopOf="@+id/cappuccino"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cappuccino"
+        android:layout_width="193dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="52dp"
+        android:text="Cappuccino"
+        app:layout_constraintBottom_toTopOf="@+id/expresso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotcoffee" />
+
+    <Button
+        android:id="@+id/expresso"
+        android:layout_width="192dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="51dp"
+        android:text="Expresso"
+        app:layout_constraintBottom_toTopOf="@+id/coldcoffee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cappuccino" />
+
+    <Button
+        android:id="@+id/coldcoffee"
+        android:layout_width="192dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="193dp"
+        android:text="Cold Coffee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expresso" />
+</androidx.constraintlayout.widget.ConstraintLayout>

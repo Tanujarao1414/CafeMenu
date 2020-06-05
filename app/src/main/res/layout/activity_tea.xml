@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chai"
+    tools:context=".Tea">
+
+
+    <Button
+        android:id="@+id/masalachai"
+        android:layout_width="193dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginBottom="57dp"
+        android:text="Masala Chai"
+        app:layout_constraintBottom_toTopOf="@+id/greentea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/greentea"
+        android:layout_width="193dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="63dp"
+        android:text="Green Tea"
+        app:layout_constraintBottom_toTopOf="@+id/blacktea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/masalachai" />
+
+    <Button
+        android:id="@+id/blacktea"
+        android:layout_width="193dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="58dp"
+        android:text="Black Tea"
+        app:layout_constraintBottom_toTopOf="@+id/herbal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greentea" />
+
+    <Button
+        android:id="@+id/herbal"
+        android:layout_width="193dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="155dp"
+        android:text="Herbal Tea"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blacktea" />
+</androidx.constraintlayout.widget.ConstraintLayout>
